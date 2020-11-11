@@ -1,0 +1,104 @@
+/*
+* - УНИВЕРСАЛЬНЫЙ СЕЛЕКТОР
+*/
+
+/* СЕЛЕКТОР ТЕГА */
+/* body {
+  background-color: black;
+  color: wheat;
+} */
+
+/* СЕЛЕКТОР КЛАССА */
+/* .full-document {
+  font-size: 30px;
+} */
+
+/* СЕЛЕКТОР ИДЕНТИФИКАТОРА */
+/* #header {
+  background: wheat;
+  color: black;
+} */
+/* СЕЛЕКТОР ПОТОМКА */
+/* .main-nav img {
+  border: 10px solid green;
+  width: 200px;
+} */
+
+/* СЕЛЕКТОР РЕБЕНКА */
+/* .main-nav > a {
+  border: 2px solid rgb(1, 8, 1);
+} */
+
+/* СЕЛЕКТОР АТРИБУТА */
+
+/* a[href="./index.html"]{
+  color: rgb(59, 177, 59);
+} */
+
+/*    REG GREEN BLUE
+rgb 0-255: 0-255; 0-255
+hex     00 00 00
+       0-9 a-f
+*/
+
+/*
+ранг СПЕЦИФИЧНОСТЬ
+0 - если через атрибут style
+0 - id (идентификатор)
+0 + 1 + 1 - class pseudo-class attribute
+0 - tag pseudo-element
+*/
+/* 0 0 2 0 */
+/*
+0 - если через атрибут style
+0 - id (идентификатор)
+0 + 1 + 1 + 1- class pseudo-class attribute
+0 - tag pseudo-element
+*/
+/* 0 0 3 0 */
+
+/* PRACTICE */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.main-nav a:hover,
+.main-nav a:focus {
+  color: #ff6c00;
+}
+.online-sign {
+  border: 1px solid #ff6c00;
+  border-radius: 25px;
+}
+
+.hero,
+.services {
+  background-color: black;
+  color: white;
+}
+
+.about p {
+  color: #555555;
+}
+
+.hero-description p,
+.services p,
+.services span {
+  color: #9da4bd;
+}
+
+.masters {
+  color: #303030;
+}
+.employee {
+  color: #ff6c00;
+}

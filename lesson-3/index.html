@@ -1,59 +1,71 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- ПОДКЛЮЧЕНИЕ СТИЛЕЙ -->
+  <link rel="stylesheet" href="./style.css">
   <title>lesson-2</title>
+  <!-- <style>
+    body {
+      background-color: rgb(156, 49, 49); color: rgb(31, 27, 21);
+    }
+  </style> -->
 </head>
-<body>
-  <header>
-    <nav>
+<!-- ПРИМЕР ИНЛАЙН СТИЛЕЙ -->
+<!-- <body style="background-color: black; color: wheat;" > -->
+
+<body class="full-document">
+
+  <header id="header">
+    <nav class="main-nav">
       <a><img src="./images/Logo.svg" alt="logo"></a>
-      <ul>
-        <li><a href="">о нас</a></li>
-        <li><a href="">услуги и цены</a></li>
-        <li><a href="">мастера</a></li>
-        <li><a href="">контакты</a></li>
+      <ul class="nav-list">
+        <li><a href="./index.html">о нас</a></li>
+        <li><a href="#">услуги и цены</a></li>
+        <li><a href="./index.html">мастера</a></li>
+        <li><a href="#">контакты</a></li>
       </ul>
-      <ul>
-        <li><a href="">+38 044 111 11 11</a></li>
-        <li><a href="">онлайн-запись</a></li>
+      <ul class="nav-contacts">
+        <li><a href="#">+38 044 111 11 11</a></li>
+        <li><a class="online-sign" href="#">онлайн-запись</a></li>
       </ul>
     </nav>
   </header>
   <main>
-    <section>
-      <ul>
+    <section class="hero">
+      <ul class="hero-social social">
         <li><a href="">Instagram</a></li>
         <li><a href="">Youtube</a></li>
       </ul>
-      <div>
+      <div class="hero-description">
         <p>a hair salon for men in kyiv</p>
         <h1>BarberShop</h1>
         <p>Мы эксперты в модных мужских стрижках. Работаем быстро, осторожно и со вкусом.</p>
       </div>
-      <ul>
+      <ul class="hero-buttons">
         <li><button>назад</button></li>
         <li><button>вперед</button></li>
       </ul>
     </section>
-    <section>
+    <section class="about">
       <div>
         <img src="#" alt="img1">
         <img src="#" alt="img2">
       </div>
       <div>
         <p>о нас</p>
-        <h2>Лучший Барбершоп<br/>
+        <h2>Лучший <span>Барбершоп</span><br/>
           твоего города</h2>
         <p>Если ты хочешь добавить в свой образ больше уверенности – тебе точно к нам.</p>
         <p>Мы команда, которая никогда не останавливается на достигнутом
           и жаждет перемен. И когда ты попадешь в руки нашего мастера,
           то уже никогда не сможешь быть прежним. Мы команда, которая всегда с клиентами "на одной волне". Поэтому, мы всегда готовы усовершенствовать каждого, кто к нам приходит!</p>
-        <a href="">онлайн-запись</a>
+        <a class="online-sign" href="">онлайн-запись</a>
       </div>
     </section>
-    <section>
+    <section class="services">
       <p>Проведи время в компании лучших мастеров</p>
       <h2>Услуги и цены</h2>
       <ul>
@@ -68,7 +80,7 @@
         <li><span>Детская стрижка (до 12 лет)</span><span> от 300 грн.</span></li>
         <li><span>Камуфлирование седины</span><span> от 200 грн.</span></li>
       </ul>
-      <a href="">онлайн-запись</a>
+      <a class="online-sign" href="">онлайн-запись</a>
     </section>
     <section>
       <ul>
@@ -95,15 +107,15 @@
         <p>О нас говорят только хорошее. Но лучше 1 раз увидеть и прочувствовать, чем 10 раз прочитать. </p>
       </div>
     </section>
-    <section>
+    <section class="masters">
       <p>для настоящих ценителей атмосферы</p>
       <h2>Наши мастера</h2>
       <ul>
         <li>
           <img src="#" alt="John Smith">
           <div>
-            <h3>John Smith</h3>
-            <p>Extreme Barber</p>
+            <h3 class="name">John Smith</h3>
+            <p class="employee">Extreme Barber</p>
             <ul>
               <li><a href=""><img src="" alt="insta"></a></li>
               <li><a href=""><img src="" alt="twitter"></a></li>
@@ -115,8 +127,8 @@
         <li>
           <img src="#" alt="Michele Doe">
           <div>
-            <h3>Michele Doe</h3>
-            <p>Extreme Barber</p>
+            <h3 class="name">Michele Doe</h3>
+            <p class="employee">Extreme Barber</p>
             <ul>
               <li><a href=""><img src="#" alt="insta"></a></li>
               <li><a href=""><img src="#" alt="twitter"></a></li>
@@ -128,8 +140,8 @@
         <li>
           <img src="#" alt="Alan Black">
           <div>
-            <h3>Alan Black</h3>
-            <p>Extreme Barber</p>
+            <h3 class="name">Alan Black</h3>
+            <p class="employee">Extreme Barber</p>
             <ul>
               <li><a href=""><img src="#" alt="insta"></a></li>
               <li><a href=""><img src="#" alt="twitter"></a></li>
@@ -185,3 +197,32 @@
   </footer>
 </body>
 </html>
+
+<section>
+  <div>
+    <a href="">
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere, tempore.</p>
+    </a>
+    <ul>
+      <li>
+        <a href="">
+          <img src="#" alt="">
+        </a>
+      </li>
+      <li>
+        <a href="">
+          <img src="#" alt="">
+        </a>
+      </li>
+      <li>
+        <a href="">
+          <img src="#" alt="">
+        </a>
+      </li>
+    </ul>
+  </div>
+</section>
+
+section > a {
+
+}
