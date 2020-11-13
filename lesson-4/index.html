@@ -5,8 +5,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- ПОДКЛЮЧЕНИЕ СТИЛЕЙ -->
-  <link rel="stylesheet" href="./style.css">
-  <title>lesson-3</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+  <title>lesson-4</title>
+  <!-- <style>
+    @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap');
+  </style> -->
   <!-- <style>
     body {
       background-color: rgb(156, 49, 49); color: rgb(31, 27, 21);
@@ -22,10 +27,10 @@
     <nav class="main-nav">
       <a><img src="./images/Logo.svg" alt="logo"></a>
       <ul class="nav-list">
-        <li><a href="./index.html">о нас</a></li>
-        <li><a href="#">услуги и цены</a></li>
-        <li><a href="./index.html">мастера</a></li>
-        <li><a href="#">контакты</a></li>
+        <li><a class="cap" href="./index.html"><p>о нас</p></a></li>
+        <li><a href="#"><p>услуги и цены</p></a></li>
+        <li><a href="./index.html"><p>мастера</p></a></li>
+        <li><a href="#"><p>контакты</p></a></li>
       </ul>
       <ul class="nav-contacts">
         <li><a href="#">+38 044 111 11 11</a></li>
@@ -42,7 +47,7 @@
       <div class="hero-description">
         <p>a hair salon for men in kyiv</p>
         <h1>BarberShop</h1>
-        <p>Мы эксперты в модных мужских стрижках. Работаем быстро, осторожно и со вкусом.</p>
+        <p>Мы эксперты в модных мужских стрижках. <br> Работаем быстро, осторожно и со вкусом.</p>
       </div>
       <ul class="hero-buttons">
         <li><button>назад</button></li>
@@ -68,13 +73,13 @@
     <section class="services">
       <p>Проведи время в компании лучших мастеров</p>
       <h2>Услуги и цены</h2>
-      <ul>
+      <ul class="service-list">
         <li><span>Мужская стрижка</span><span> от 300 грн.</span></li>
         <li><span>Стрижка бороды</span><span> от 200 грн.</span></li>
         <li><span>Стрижка усов</span><span> от 200 грн.</span></li>
         <li><span>Бритье опасной бритвой</span><span> от 200 грн.</span></li>
       </ul>
-      <ul>
+      <ul class="service-list">
         <li><span>Cтрижка у стажера</span><span> от 50 грн.</span></li>
         <li><span>Стрижка под насадку</span><span> от 200 грн.</span></li>
         <li><span>Детская стрижка (до 12 лет)</span><span> от 300 грн.</span></li>
@@ -113,7 +118,7 @@
       <ul>
         <li>
           <img src="#" alt="John Smith">
-          <div>
+          <div class="employee-info">
             <h3 class="name">John Smith</h3>
             <p class="employee">Extreme Barber</p>
             <ul>
@@ -126,7 +131,7 @@
         </li>
         <li>
           <img src="#" alt="Michele Doe">
-          <div>
+          <div class="employee-info">
             <h3 class="name">Michele Doe</h3>
             <p class="employee">Extreme Barber</p>
             <ul>
@@ -139,7 +144,7 @@
         </li>
         <li>
           <img src="#" alt="Alan Black">
-          <div>
+          <div class="employee-info">
             <h3 class="name">Alan Black</h3>
             <p class="employee">Extreme Barber</p>
             <ul>
