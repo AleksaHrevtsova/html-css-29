@@ -61,7 +61,7 @@ hex     00 00 00
 /* 0 0 3 0 */
 
 /* PRACTICE */
-* {
+/* * {
   margin: 0;
   padding: 0;
 }
@@ -72,7 +72,7 @@ ul {
 
 a {
   text-decoration: none;
-}
+} */
 
 .main-nav a:hover,
 .main-nav a:focus {

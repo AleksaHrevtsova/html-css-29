@@ -13,6 +13,16 @@ Use a better box model (opinionated).
 *::before,
 *::after {
   box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
 }
 
 /**

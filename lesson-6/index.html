@@ -5,55 +5,68 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- ПОДКЛЮЧЕНИЕ СТИЛЕЙ -->
-zx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" />">
+  <link rel="stylesheet" href="../lesson-6/css/modern-normalize.css">
   <link rel="stylesheet" href="./css/style.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./css//modern-normalize.css">
   <title>lesson-4</title>
 
 </head>
 
+<!-- <header></header> -->
 
 <body class="full-document">
 
-  <header id="header">
-    <nav class="main-nav">
-      <a><img src="./images/Logo.svg" alt="logo"></a>
-      <ul class="nav-list">
-        <li><a class="cap" href="./index.html"><p>о нас</p></a></li>
-        <li><a href="#"><p>услуги и цены</p></a></li>
-        <li><a href="./index.html"><p>мастера</p></a></li>
-        <li><a href="#"><p>контакты</p></a></li>
-      </ul>
-      <ul class="nav-contacts">
-        <li><a href="#">+38 044 111 11 11</a></li>
-        <li><a class="online-sign" href="#">онлайн-запись</a></li>
-      </ul>
-    </nav>
-  </header>
   <main>
-    <section class="hero">
-      <ul class="hero-social social">
-        <li><a href="">Instagram</a></li>
-        <li><a href="">Youtube</a></li>
-      </ul>
-      <div class="hero-description">
+    <div class="top ">
+      <div class="logo-header">
+        <a class="logo-link"><img src="./images/Logo.svg" alt="logo"></a>
+        <ul class="social-links">
+          <li><a href="">Youtube</a></li>
+          <li><a href="">Instagram</a></li>
+        </ul>
+      </div>
+      <div class="back">
+        <header class="header">
+          <nav class="main-nav">
+          <ul class="nav-list">
+            <li><a class="cap" href="./index.html"><p>о нас</p></a></li>
+            <li><a href="#"><p>услуги и цены</p></a></li>
+            <li><a href="./index.html"><p>мастера</p></a></li>
+            <li><a href="#"><p>контакты</p></a></li>
+          </ul>
+          <ul class="nav-contacts">
+            <li><a href="#">+38 044 111 11 11</a></li>
+            <li><a class="online-sign" href="#">онлайн-запись</a></li>
+          </ul>
+          </nav>
+        </header>
+
+        <section class="hero">
+        <div class="hero-description">
         <p>a hair salon for men in kyiv</p>
-        <h1>BarberShop</h1>
+        <h1 class="hero-title">BarberShop</h1>
         <p>Мы эксперты в модных мужских стрижках. <br> Работаем быстро, осторожно и со вкусом.</p>
+        </div>
+        <ul class="hero-buttons">
+          <li><button class="prev">назад</button></li>
+          <li><button class="next">вперед</button></li>
+        </ul>
+        </section>
       </div>
-      <ul class="hero-buttons">
-        <li><button>назад</button></li>
-        <li><button>вперед</button></li>
-      </ul>
-    </section>
-    <section class="about">
-      <div>
-        <img src="#" alt="img1">
-        <img src="#" alt="img2">
-      </div>
-      <div>
+    </div>
+    <section class="about container">
+
+        <ul class="about-images">
+          <li>
+            <img src="./images/img1.jpg" alt="img1">
+          </li>
+          <li>
+            <img src="./images/img2.jpg" alt="img2">
+          </li>
+        </ul>
+
+      <div class="about-content">
         <p>о нас</p>
         <h2>Лучший <span>Барбершоп</span><br/>
           твоего города</h2>
@@ -61,12 +74,17 @@ zx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" />">
         <p>Мы команда, которая никогда не останавливается на достигнутом
           и жаждет перемен. И когда ты попадешь в руки нашего мастера,
           то уже никогда не сможешь быть прежним. Мы команда, которая всегда с клиентами "на одной волне". Поэтому, мы всегда готовы усовершенствовать каждого, кто к нам приходит!</p>
-        <a class="online-sign" href="">онлайн-запись</a>
-      </div>
+          <div class="sign">
+          <a class="online-sign" href="">онлайн-запись</a>
+          </div>
+        </div>
     </section>
-    <section class="services">
-      <p>Проведи время в компании лучших мастеров</p>
-      <h2>Услуги и цены</h2>
+    <section class="services container">
+      <div>
+        <p>Проведи время в компании лучших мастеров</p>
+        <h2 class="services-title">Услуги и цены</h2>
+      </div>
+      <div class="services-lists">
       <ul class="service-list">
         <li><span>Мужская стрижка</span><span> от 300 грн.</span></li>
         <li><span>Стрижка бороды</span><span> от 200 грн.</span></li>
@@ -79,9 +97,12 @@ zx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" />">
         <li><span>Детская стрижка (до 12 лет)</span><span> от 300 грн.</span></li>
         <li><span>Камуфлирование седины</span><span> от 200 грн.</span></li>
       </ul>
+    </div>
+    <div class="sign">
       <a class="online-sign" href="">онлайн-запись</a>
+    </div>
     </section>
-    <section>
+    <section class="container">
       <ul>
         <li>
           <p>600</p>
@@ -106,7 +127,7 @@ zx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" />">
         <p>О нас говорят только хорошее. Но лучше 1 раз увидеть и прочувствовать, чем 10 раз прочитать. </p>
       </div>
     </section>
-    <section class="masters">
+    <section class="masters container">
       <p>для настоящих ценителей атмосферы</p>
       <h2>Наши мастера</h2>
       <ul>
@@ -151,7 +172,7 @@ zx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" />">
         </li>
       </ul>
     </section>
-    <section>
+    <section class="container">
       <!-- <h2></h2> -->
       <p>На латинском языке “барба” означает “борода”</p>
       <ul>
@@ -162,15 +183,15 @@ zx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" />">
       </ul>
     </section>
   </main>
-  <footer>
+
+  <footer class="container">
     <div>
       <form action="mailto:hrevtsova@yahoo.com">
         <h2>онлайн-запись</h2>
         <input type="text" placeholder="имя+">
         <input type="text" placeholder="телефон+">
         <textarea name="message" id="message" cols="40" rows="5">сообщение</textarea>
-        <!-- <button type="submit">отправить</button> -->
-        <input type="button" value="отправить">
+        <input type="submit" value="отправить">
       </form>
       <div>
         <h2>контакты</h2>
