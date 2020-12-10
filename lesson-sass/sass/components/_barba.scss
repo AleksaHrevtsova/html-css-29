@@ -1,0 +1,32 @@
+/* BARBA */
+.barba {
+  display: flex;
+  flex-flow: column;
+}
+.barba p {
+  display: inline-block;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 15px;
+
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+
+  color: #303030;
+}
+.barba p::before {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 20px;
+  content: '';
+  width: 60px;
+  height: 1px;
+  background: #303030;
+}
+.barba-list {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 44px;
+}

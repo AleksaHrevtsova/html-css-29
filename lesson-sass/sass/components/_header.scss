@@ -1,0 +1,115 @@
+/* HEADER */
+.top {
+  display: flex;
+  width: 1280px;
+  margin: 0 auto;
+}
+
+.logo-header {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 32px;
+  padding-left: 55px;
+  padding-right: 31px;
+  padding-bottom: 40px;
+}
+
+.social-links {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+/* .social-links::after {
+  content: "";
+  width: 2px;
+  height: 60px;
+  background: #303030;
+} */
+.social-link li {
+  display: block;
+}
+.social-links a {
+  padding-top: 40px;
+  color: #303030;
+  writing-mode: vertical-rl;
+  transform: rotate(-180deg);
+  font-family: Open-Sans;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.37;
+
+  letter-spacing: 0.2em;
+}
+
+.social-links a:hover {
+  color: #ff6c00;
+}
+.header {
+  display: flex;
+
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 32px;
+  padding-right: 55px;
+}
+
+.main-nav {
+  color: white;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+}
+
+.nav-list {
+  display: flex;
+}
+
+.nav-list li {
+  margin-left: 50px;
+}
+
+.main-nav a:hover,
+.main-nav a:focus,
+.nav-list a:hover::after,
+.nav-list a:focus::after {
+  color: #ff6c00;
+  background: #ff6c00;
+}
+
+.nav-list a {
+  /* к строчному элементу не применяется */
+  background: blanchedalmond;
+}
+
+.nav-list a::after {
+  display: block;
+  content: '';
+  width: inherit;
+  height: 3px;
+  /* background: white; */
+}
+
+/* .nav-list a:hover::after {
+  background: #ff6c00;
+} */
+.nav-list p::first-letter {
+  text-transform: capitalize;
+}
+.nav-contacts {
+  display: flex;
+}
+.nav-contacts li:not(:last-child) {
+  margin-right: 40px;
+}
+
+.nav-contacts a {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.333;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+/* HEADER */

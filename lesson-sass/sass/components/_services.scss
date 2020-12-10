@@ -1,0 +1,42 @@
+/* SERVICES */
+.services {
+  flex-flow: column;
+  background: black;
+}
+
+.services-title {
+  font-weight: bold;
+  font-size: 42px;
+  line-height: 1.17;
+  letter-spacing: 0.05em;
+
+  margin-bottom: 44px;
+
+  color: #ffffff;
+}
+.services p::before {
+  display: block;
+  content: '';
+  width: 10px;
+  height: 10px;
+}
+.services-lists,
+.service-list li {
+  display: flex;
+  justify-content: space-between;
+}
+.service-list {
+  width: calc(100% / 2 - 64px);
+  background: blanchedalmond;
+  padding: 30px 40px;
+}
+.service-list li {
+  border-bottom: 1px solid grey;
+}
+.service-list li:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.container {
+  border: 1px solid;
+}

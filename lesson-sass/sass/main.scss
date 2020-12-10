@@ -1,0 +1,17 @@
+@import './utils/variables';
+@import './utils/modern-normalize.scss';
+
+@import './general/container';
+@import './general/common';
+
+@import './components/header';
+@import './components/hero';
+
+@import './components/about';
+@import './components/services';
+@import './components/score';
+@import './components/masters';
+@import './components/barba';
+@import './components/contacts';
+
+@import './components/footer';

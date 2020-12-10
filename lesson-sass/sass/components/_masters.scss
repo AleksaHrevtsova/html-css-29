@@ -1,0 +1,80 @@
+/* MASTERS */
+.masters {
+  display: flex;
+  flex-flow: column;
+  background-color: var(--team-back);
+}
+.master-beforetitle {
+  font-family: Open Sans;
+  display: inline-block;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 15px;
+
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+
+  color: #303030;
+}
+.master-beforetitle::before {
+  display: inline-block;
+  content: '';
+  width: 60px;
+  height: 1px;
+  background: var(--contacts-back);
+  vertical-align: middle;
+  margin-right: 20px;
+}
+.masters h2 {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 42px;
+  line-height: 49px;
+  letter-spacing: 0.05em;
+
+  color: #303030;
+  margin-top: 20px;
+}
+.masters-list {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 44px;
+}
+.master-info {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+}
+.name {
+  margin-top: 20px;
+}
+.position {
+  margin-top: 8px;
+}
+.master-social-links {
+  display: flex;
+  margin-top: 30px;
+}
+.master-social-links li:not(:last-child) {
+  margin-right: 10px;
+}
+.master-social-links a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  background: var(--white);
+  fill: var(--graphite);
+  border-radius: 50%;
+}
+.master-social-links li a:hover {
+  color: var(--orange);
+}
+/* currentColor для svg наследует изменение цвета от ссылки */
+.social-link-icon:hover {
+  fill: currentColor;
+}

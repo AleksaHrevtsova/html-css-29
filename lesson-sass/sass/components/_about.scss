@@ -1,0 +1,60 @@
+/* ABOUT */
+.about {
+  justify-content: space-between;
+}
+
+.about-images img {
+  display: flex;
+  width: 270px;
+  height: 445px;
+}
+
+.about-images {
+  display: flex;
+  justify-content: space-between;
+}
+.about-images li {
+  width: calc(100% / 2 - 30px);
+}
+.about-content {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  width: calc(100% / 2 - 64px);
+}
+
+.about p {
+  color: #555555;
+}
+.about .online-sign {
+  color: #303030;
+}
+.about-images li {
+  position: relative;
+  width: 270px;
+  height: 445px;
+
+  /* background: var(--orange); */
+  background: violet;
+  overflow: hidden;
+}
+.about-images li:not(:last-child) {
+  margin-right: 20px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  transform: translateY(0);
+  transition: transform 500ms ease;
+
+  /* z-index: 2; */
+}
+
+.about-images li:hover .overlay {
+  transform: translateY(100%);
+}

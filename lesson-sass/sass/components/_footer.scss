@@ -1,0 +1,36 @@
+/* FOOTER */
+.footer-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 56px;
+}
+.footer-contacts {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer-contacts li {
+  margin-left: 40px;
+}
+.footer-contacts::before {
+  display: block;
+  content: '';
+  width: 60px;
+  height: 1px;
+  background: var(--graphite);
+}
+.footer-wrapper p,
+.footer-contacts a {
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.2em;
+}
+.footer-wrapper p {
+  color: var(--light-grey-text);
+}
+.footer-contacts a {
+  display: block;
+  color: var(--graphite);
+}

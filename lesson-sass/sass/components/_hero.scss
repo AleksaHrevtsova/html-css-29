@@ -1,0 +1,75 @@
+/* HERO */
+.hero {
+  padding-right: 55px;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 41px;
+}
+
+.hero-description {
+  padding-top: 204px;
+  padding-left: 100px;
+  padding-bottom: 206px;
+}
+.hero-title {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 72px;
+  line-height: 1.18;
+
+  letter-spacing: 0.05em;
+
+  color: #ffffff;
+}
+.hero-description p,
+.services p,
+.services span {
+  color: #9da4bd;
+  font-size: 18px;
+  line-height: 1.67;
+}
+.hero-buttons {
+  display: flex;
+  align-self: flex-end;
+}
+
+.hero-buttons li {
+  padding-right: 30px;
+}
+.hero-buttons li:first-child {
+  margin-right: 30px;
+}
+
+.hero-buttons button {
+  text-transform: capitalize;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.14;
+  letter-spacing: 0.1em;
+
+  color: rgba(157, 164, 189, 0.6);
+  background: inherit;
+  border: none;
+
+  padding-bottom: 8px;
+}
+.prev {
+  padding-right: 40px;
+}
+.next {
+  padding-left: 40px;
+}
+.hero-buttons li::after {
+  display: block;
+  content: '';
+  width: inherit;
+  height: 2px;
+  background: rgba(157, 164, 189, 0.6);
+}
+
+.online-sign {
+  /*           x     y   blur          color          */
+  box-shadow: -10px 20px 3px rgba(12, 139, 61, 0.3),
+    10px -20px 3px rgba(146, 10, 10, 0.4);
+}

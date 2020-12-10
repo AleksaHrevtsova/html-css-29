@@ -1,0 +1,45 @@
+section {
+  display: flex;
+}
+ul {
+  list-style: none;
+}
+
+a {
+  color: white;
+}
+/* ОБЩИЕ СВОЙСТВА ДЛЯ ВСЕГО ДОКУМЕНТА */
+
+/* ПЕРЕИСПОЛЬЗУЕМЫЕ СВОЙСТВА */
+.sign {
+  margin-top: 62px;
+  align-self: center;
+}
+
+.online-sign {
+  border: 1px solid #ff6c00;
+  border-radius: 25px;
+  padding: 10px 20px;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+
+  color: white;
+}
+/* ПЕРЕИСПОЛЬЗУЕМЫЕ СВОЙСТВА */
+
+.back {
+  width: 100%;
+  background: black;
+  /* background-image: linear-gradient(to right, rgba(6, 12, 34, 0.6), rgba(222, 245, 34, 0.6)); */
+  /* background-image: radial-gradient(circle, black 20%, red 20%, green 50%, blue 50%); */
+  /* background-image: url(../images/Slider_img1.jpg); */
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background-color: red; */
+  /* background: rgba(25, 28, 38, 0.9) url(../images/Slider_img1.jpg); */
+  /* transform: matrix(-1, 0, 0, 1, 0, 0); */
+  /* background-position: center;*/
+}
