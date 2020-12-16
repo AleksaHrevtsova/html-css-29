@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/form.css" />
+    <title>Form</title>
+  </head>
+  <body>
+    <form action="#" method="" class="form">
+      <label for="">
+        <span class="span">Name</span>
+        <input
+          type="text"
+          name="name"
+          id="userNAme"
+          placeholder="Enter your name please"
+        />
+      </label>
+
+      <label for="age"><span class="span">Age</span></label>
+      <input
+        type="number"
+        name="age"
+        id="age"
+        min="18"
+        max="25"
+        step="0.5"
+        placeholder="Enter your age please"
+      />
+
+      <label
+        ><span class="span">Date of Birth</span>
+        <input type="date" name="birthDate" id="birthDate" />
+        <input type="time" name="birthDate" id="birthTime" />
+        <input type="datetime-local" name="birthDate" id="local" />
+        <input type="week" name="birthDate" id="week" />
+        <input type="month" name="birthDate" id="month" />
+      </label>
+
+      <label for="email"><span class="span">E-mail</span></label>
+      <input
+        type="email"
+        name="email"
+        id="email"
+        placeholder="Enter your email please"
+      />
+
+      <label for="phone"><span class="span">Telephone</span></label>
+      <input
+        type="tel"
+        name="phone"
+        id="phone"
+        placeholder="Enter your phone please"
+      />
+
+      <label class="showPassByIcon" for="password"
+        ><span class="span">Password</span>
+        <input
+          class="pass"
+          type="password"
+          name="password"
+          id="password"
+          placeholder="Enter your password please"
+        />
+        <a href="#" class="iconPassLink"></a>
+      </label>
+
+      <!-- <fieldset class="checkboxes"> -->
+
+      <span class="span">CheckBox</span>
+
+      <div role="group" class="checkboxes">
+        <label for="">HTML & CSS</label>
+        <input type="checkbox" value="HTML & CSS" />
+
+        <label for="">JavaScript</label>
+        <input type="checkbox" value="JavaScript" />
+
+        <label for="">React</label>
+        <input type="checkbox" value="React" />
+      </div>
+      <!-- </fieldset> -->
+
+      <span class="span">Choose your size</span>
+      <div role="group" class="checkboxes">
+        <label for="1">s</label>
+        <input type="radio" name="choose" id="1" value="1" />
+
+        <label for="2">m</label>
+        <input type="radio" name="choose" id="2" value="2" checked />
+
+        <label for="3">l</label>
+        <input type="radio" name="choose" id="3" value="3" />
+      </div>
+
+      <label for="num"><span class="span">Select-1</span></label>
+      <select name="num" id="num">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+      </select>
+
+      <label for="word"><span class="span">Select-2</span></label>
+      <select name="word" id="word">
+        <optgroup label="wooooord">
+          <option value="alpha">alpha</option>
+          <option value="beta">beta</option>
+          <option value="gamma">gamma</option>
+        </optgroup>
+
+        <optgroup label="symbols">
+          <option value="alpha">bbbb</option>
+          <option value="beta">cccc</option>
+          <option value="gamma">dddd</option>
+        </optgroup>
+      </select>
+
+      <label for="range"><span class="span">Range</span></label>
+      <input type="range" name="range" id="range" min="0" max="5" />
+
+      <label for="avatar"><span class="span">Download file</span></label>
+      <input
+        type="file"
+        name="avatar"
+        id="avatar"
+        accept="image/jpeg"
+        multiple="2"
+      />
+
+      <label for="color"><span class="span">Choose color</span></label>
+      <input type="color" name="color" id="color" />
+
+      <label for="comment"><span class="span">Your Comment</span></label>
+      <textarea
+        name="comment"
+        id="comment"
+        cols="1"
+        rows="2"
+        placeholder="comment"
+        maxlength="12"
+        disabled
+      ></textarea>
+      <button type="submit">SEND RESULTS</button>
+    </form>
+
+    <script src="./js/index.js" type="module"></script>
+  </body>
+</html>

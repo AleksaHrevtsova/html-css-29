@@ -1,0 +1,49 @@
+.form {
+  display: flex;
+  flex-flow: column;
+  width: 700px;
+  border: 4px solid;
+  background-color: darksalmon;
+  padding: 20px;
+}
+button {
+  display: block;
+  margin: 0 auto;
+  padding: 10px 15px;
+}
+input,
+textarea {
+  margin: 20px;
+  padding: 20px;
+}
+
+label {
+  display: flex;
+  flex-flow: column;
+}
+.span {
+  margin-left: 20px;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.checkboxes {
+  display: flex;
+}
+
+/* styles for show/unshow password */
+.showPassByIcon {
+  position: relative;
+}
+.iconPassLink {
+  position: absolute;
+  right: 4%;
+  top: 50%;
+  width: 40px;
+  height: 40px;
+  background: url(../images/icons/forms/not-visible.png) 0 0 no-repeat;
+}
+.iconPassLink.show {
+  background: url(../images/icons/forms/visible.png) 0 0 no-repeat;
+}
+/* styles for show/unshow password */

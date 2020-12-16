@@ -38,7 +38,7 @@
   "sync.gist": "03b43008152b5536a54538b09982e026",
   "editor.renameOnType": true,
   "editor.renderWhitespace": "all",
-  "window.zoomLevel": 2,
+  "window.zoomLevel": 1,
   "editor.mouseWheelZoom": true,
   "codestream.email": "sergeyagarkov91@mail.ru",
   "formattingToggle.affects": ["formatOnPaste", "formatOnSave", "formatOnType"],
