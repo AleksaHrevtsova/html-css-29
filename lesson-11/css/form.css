@@ -47,3 +47,104 @@ label {
   background: url(../images/icons/forms/visible.png) 0 0 no-repeat;
 }
 /* styles for show/unshow password */
+
+/* ============ */
+/* lesson-12 */
+/* enabled & disabled => input, select, button */
+
+.btn:enabled {
+  background-color: darkblue;
+  color: aliceblue;
+}
+button:disabled {
+  background-color: darkgray;
+}
+
+/* checked => type="radio" & "checkbox" */
+
+.check:checked + .checkLabel {
+  font-weight: bold;
+  color: blue;
+}
+.checkLabel {
+  cursor: pointer;
+}
+
+/* in-range & out-of-range =>
+type="range" || "number" || "date"
+with attributes min & max*/
+.age {
+  outline: none;
+}
+.age:in-range {
+  border: 3px solid green;
+}
+
+.age:out-of-range {
+  border: 3px solid red;
+}
+
+/* required & optional => all */
+
+input:required {
+  border: 6px solid rgb(241, 163, 176);
+}
+
+input:optional {
+  border: 6px solid rgb(158, 30, 158);
+}
+
+/* valid & invalid by typy & pattern */
+.name:valid,
+.comment:valid {
+  background-color: rgb(207, 204, 35);
+}
+.name:invalid,
+.comment:invalid {
+  background-color: rgb(233, 53, 77);
+}
+
+/* COMBINE SELECTORS */
+/* :required & :valid */
+.comment:required:valid {
+  background-color: rgb(16, 19, 16);
+  color: wheat;
+}
+.comment:required:invalid {
+  background-color: wheat;
+  color: black;
+}
+
+/* pseudoelement ::placeholder &
+pseudoclass :placeholder-shown */
+
+.loginEmail::placeholder {
+  color: rgb(241, 163, 176);
+  font-size: 24px;
+}
+.loginEmail:placeholder-shown {
+  background-color: rgb(221, 236, 134);
+}
+.loginEmail:not(:placeholder-shown) {
+  background-color: rgb(146, 136, 156);
+}
+
+/* :placeholder-shown & valid || invalid */
+/* .loginEmail:not(:placeholder-shown):valid {
+  background-color: rgb(194, 214, 79);
+}
+.loginEmail:not(:placeholder-shown):invalid {
+  background-color: rgb(117, 13, 62);
+} */
+.form {
+  transition: box-shadow 250ms linear;
+}
+
+.form:focus-within {
+  box-shadow: 0px 20px 10px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 10px 0 rgba(0, 0, 0, 0.12);
+}
+.form input:focus-within {
+  color: blue;
+  font-size: 24px;
+}

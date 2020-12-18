@@ -1,0 +1,227 @@
+/* TRANSFORMATIONS */
+.hero-title:hover {
+  /* 1 < масштаб < 1 */
+  /* transform: scale(0.5); */
+  /* transform: scale(1.5); */
+  /* transform: scaleX(0.5); */
+  /* transform: scaleY(1.5); */
+
+  /* угол поворота */
+  /* transform: rotate(45deg); */
+  transform: rotate(90deg);
+  /* точка поворота */
+  transform-origin: top center;
+}
+.scores {
+  position: relative;
+}
+
+/* центрирование модального окна или блока*/
+.scores-list {
+  position: absolute;
+
+  /* выплывает с левого нижнего угла */
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+
+  /* выплывает с правого нижнего угла */
+  /* top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); */
+
+  transition-property: background-color, transform;
+  transition-duration: 2500ms;
+  transition-delay: 500ms;
+}
+
+.scores-list:hover {
+  background-color: darkgoldenrod;
+}
+/* скрытие по нажатию на кнопку */
+.show {
+  visibility: hidden;
+}
+
+.box {
+  /* смещение по сторонам */
+  transform: translate(-50px, -50px);
+  transform: translate(50px, 50px);
+  transform: translateX(50px);
+  transform: translateY(50px);
+}
+
+.barba-list li {
+  /* искажение */
+  /* transform: skew(10deg, 10deg); */
+  /* transform: skewX(10deg); */
+  transform: skewY(10deg);
+}
+
+/* ANIMATIONS */
+@keyframes changeBgColor1 {
+  0% {
+    background-color: rgb(220, 190, 20);
+  }
+  25% {
+    background-color: rgb(83, 220, 20);
+  }
+  50% {
+    background-color: rgb(10, 151, 156);
+  }
+  75% {
+    background-color: rgb(63, 20, 220);
+  }
+  100% {
+    background-color: rgb(220, 20, 170);
+  }
+}
+@keyframes changeBgColor2 {
+  0% {
+    background-color: rgb(61, 128, 31);
+  }
+  50% {
+    background-color: rgb(137, 151, 14);
+  }
+  100% {
+    background-color: rgb(51, 5, 39);
+  }
+}
+.barba {
+  /* animation-name: changeBgColor2; */
+  animation-name: changeBgColor1;
+  animation-duration: 4500ms;
+  /* animation-iteration-count: infinite; */
+  animation-timing-function: ease;
+  animation-delay: 500ms;
+
+  animation-fill-mode: forwards;
+}
+
+.barba:hover {
+  animation-play-state: paused;
+}
+
+@keyframes boo {
+  0% {
+    color: rgb(220, 190, 20);
+    font-size: 50px;
+  }
+  25% {
+    color: rgb(83, 220, 20);
+  }
+  50% {
+    color: rgb(10, 151, 156);
+    font-style: italic;
+  }
+  75% {
+    color: rgb(63, 20, 220);
+  }
+  100% {
+    color: rgb(220, 20, 170);
+  }
+}
+.about {
+  animation-name: changeBgColor;
+  animation-duration: 3000ms;
+  /* и вернется в белому фонуб чтобы повторять, ставим: */
+  animation-iteration-count: 2;
+  /* чтобы зациклить анимацию - значение infinite */
+  /* animation-iteration-count: infinite; */
+
+  /* распределим время для переходов */
+  animation-timing-function: linear;
+
+  /* задержка перед анимацией */
+  animation-delay: 500ms;
+
+  /* воспроизведение по кадрам */
+  /* animation-direction: reverse; */
+  /* animation-direction: alternate; */
+  animation-direction: alternate-reverse;
+
+  /* контроль применения стилей до, во время и после анимации */
+  /* только во время */
+  animation-fill-mode: none;
+  /* остаются после анимации */
+  animation-fill-mode: forwards;
+  /* начальные стили анимации применены до ее начала*/
+  animation-fill-mode: backwards;
+  /* forwards + backwards */
+  animation-fill-mode: both;
+}
+
+.about:hover {
+  animation-play-state: paused;
+}
+
+/* animation: name duration timing delay iteration direction fill-mode play-state; */
+.hero-title {
+  animation: boo 2s infinite;
+  animation-delay: 2000ms;
+  animation-direction: alternate-reverse;
+}
+
+/* .hero-title {
+  animation: boo 2s 0.5s ease-in-out;
+} */
+
+/* .hero-title {
+  animation: boo 2s ease-in-out 0.5s forwards;
+} */
+
+/* .hero-title {
+  animation: boo 2s forwards infinite ease-out 0.5s;
+} */
+
+/* PERSPECTIVE */
+masters-list {
+  border-radius: 4px;
+  margin: -10px;
+  background-color: #fff;
+  box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+}
+
+.masters-list li {
+  animation: rotateY 3000ms infinite alternate backwards ease-in-out 1000ms;
+}
+.barba-list li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.barba-list li::before {
+  background-color: rgba(0, 0, 0, 0.698);
+  position: absolute;
+  display: inline-block;
+  content: 'Hello World';
+  font-size: 30px;
+  color: whitesmoke;
+}
+
+.masters-list li:nth-child(1) {
+  background-color: #cf2d71;
+  /* transform-origin: top left; */
+}
+
+.masters-list li:nth-child(2) {
+  background-color: #27b049;
+  /* transform-origin: top center; */
+}
+
+.masters-list li:nth-child(3) {
+  background-color: #3f51b5;
+  /* transform-origin: top right; */
+}
+
+@keyframes rotateY {
+  0% {
+    transform: perspective(600px) rotateY(40deg);
+  }
+
+  100% {
+    transform: perspective(400px) rotateY(-40deg);
+  }
+}
