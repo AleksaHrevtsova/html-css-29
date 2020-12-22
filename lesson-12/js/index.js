@@ -16,3 +16,12 @@ function showPass(e) {
 }
 iconPassLink.addEventListener('click', showPass);
 // alert(`HELLO WORLD`);
+passInput.addEventListener('change', e => {
+  let x = e.target.value;
+  x = x.split('');
+  console.log(x);
+  console.log(x.length);
+  setTimeout(() => {
+    passInput.type = 'password';
+  }, 1000);
+});
