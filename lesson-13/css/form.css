@@ -1,0 +1,153 @@
+.form {
+  display: flex;
+  flex-flow: column;
+  width: 700px;
+  border: 1px solid;
+  background-color: rgba(122, 211, 233, 0.63);
+  padding: 20px;
+}
+button {
+  display: block;
+  margin: 0 auto;
+  padding: 10px 15px;
+}
+input,
+textarea {
+  margin: 20px;
+  padding: 20px;
+}
+
+label {
+  display: flex;
+  flex-flow: column;
+}
+.span {
+  margin-left: 20px;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.checkboxes {
+  display: flex;
+}
+
+/* styles for show/unshow password */
+.showPassByIcon {
+  position: relative;
+}
+.iconPassLink {
+  position: absolute;
+  right: 4%;
+  top: 50%;
+  width: 40px;
+  height: 40px;
+  background: url(../images/icons/forms/not-visible.png) 0 0 no-repeat;
+}
+.iconPassLink.show {
+  background: url(../images/icons/forms/visible.png) 0 0 no-repeat;
+}
+/* styles for show/unshow password */
+
+/* LESSON-12 */
+
+/* :enabled & :disabled
+=> input || select || button */
+.btn:enabled {
+  background-color: black;
+  color: wheat;
+}
+.btn:disabled {
+  background-color: wheat;
+  color: black;
+}
+
+/* :checked
+=> type="checkbox" & "radio" */
+
+.check:checked + .checkLabel {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* :in-range & :out-of-range
+=> type="number" || "date" || "range"
+!!   attr MIN & MAX      !! */
+.age:in-range {
+  background-color: yellowgreen;
+}
+
+.age:out-of-range {
+  background-color: coral;
+}
+
+/* :required & :optional
+=> all  */
+
+input:required {
+  border: 2px solid blue;
+}
+
+input:optional {
+  border: 1px solid brown;
+}
+
+/* :valid & :invalid
+=> by type & pattern */
+.loginEmail {
+  outline: transparent;
+}
+.loginEmail:valid {
+  border: 3px solid green;
+}
+.loginEmail:invalid {
+  border: 3px solid red;
+}
+
+/* ::placeholder */
+.loginEmail::placeholder {
+  color: pink;
+  font-size: 20px;
+}
+
+/* :placeholder-shown */
+/* .loginEmail:placeholder-shown {
+  background-color: rgb(104, 37, 151);
+} */
+
+/* .loginEmail:not(:placeholder-shown) {
+  background-color: rgba(122, 211, 233, 0.63);
+} */
+
+/* COMBINE SELECTORS */
+.comment:required:valid {
+  background-color: wheat;
+  color: black;
+}
+
+.comment:required:invalid {
+  background-color: black;
+  color: wheat;
+}
+
+.loginEmail:not(:placeholder-shown):valid {
+  background-color: rgb(47, 196, 72);
+}
+.loginEmail:not(:placeholder-shown):invalid {
+  background-color: rgb(196, 84, 109);
+}
+
+/* ======= |==| ======= */
+/* :focus-within */
+.form {
+  transition: box-shadow 500ms linear;
+}
+
+.form:focus-within {
+  box-shadow: 0px 20px 30px rgba(124, 122, 233, 0.63);
+}
+
+input:focus-within {
+  font-size: 30px;
+}
+
+/* ======= |==| ======= */
